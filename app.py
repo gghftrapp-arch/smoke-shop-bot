@@ -202,7 +202,7 @@ def send_welcome(message):
     conn.close()
 
     welcome_text = (
-        "🔥 — SMOKE SHOP — 🔥\n\n"
+        "🔥 — PHANTOM SHOP — 🔥\n\n"
         "👋 Welcome, Customer!\n\n"
         "⭐ — STORE HIGHLIGHTS — ⭐\n\n"
         "🔑 Premium Game Keys\n"
@@ -389,7 +389,7 @@ def handle_inline_buttons(call):
         bot.edit_message_text(
             chat_id=call.message.chat.id,
             message_id=call.message.message_id,
-            text="🔥 — SMOKE SHOP — 🔥\n🛍️ Categories:\n\nSelect your required section below:",
+            text="🔥 — PHANTOM SHOP — 🔥\n🛍️ Categories:\n\nSelect your required section below:",
             reply_markup=markup
         )
 
@@ -401,7 +401,7 @@ def handle_inline_buttons(call):
             types.InlineKeyboardButton('🔙 Back to Categories', callback_data='shop_now')
         )
         text_content = (
-            "🔥 — SMOKE SHOP — 🔥\n"
+            "🔥 — PHANTOM SHOP — 🔥\n"
             "🍏 IOS CERTIFICATES (365 DAYS)\n\n"
             "━━━━━━━━━━━━━━━━━━━━━━\n"
             "⚡ SERVICE: iOS Service\n"
@@ -431,7 +431,7 @@ def handle_inline_buttons(call):
         )
         
         text_content = (
-            f"🔥 — SMOKE SHOP — 🔥\n"
+            f"🔥 — PHANTOM SHOP — 🔥\n"
             f"🎮 {section_name}\n\n"
             "━━━━━━━━━━━━━━━━━━━━━━\n"
             "⚡ PANEL: PHANTOM Panel\n"
@@ -481,7 +481,7 @@ def handle_inline_buttons(call):
             f"📦 Product: {category}\n"
             f"💰 Price Paid: {price} EGP\n\n"
             f"🔑 YOUR KEY:\n{key_code}\n\n"
-            "📌 Thank you for shopping with SMOKE SHOP!"
+            "📌 Thank you for shopping with PHANTOM SHOP!"
         )
         bot.send_message(call.message.chat.id, delivery_text)
 
@@ -648,7 +648,7 @@ def handle_inline_buttons(call):
         )
         howto_text = (
             "📖 How to Use — Instructions\n\n"
-            "Welcome to SMOKE SHOP!\n\n"
+            "Welcome to PHANTOM SHOP!\n\n"
             "1. Select 'Shop Now' to view products.\n"
             "2. Choose your preferred category and duration.\n"
             "3. Ensure you have enough balance or tap 'Add Balance' to top up.\n"
@@ -666,7 +666,7 @@ def handle_inline_buttons(call):
     elif call.data == 'main_menu':
         bot.answer_callback_query(call.id)
         welcome_text = (
-            "🔥 — SMOKE SHOP — 🔥\n\n"
+            "🔥 — PHANTOM SHOP — 🔥\n\n"
             "👋 Welcome, Customer!\n\n"
             "⭐ — STORE HIGHLIGHTS — ⭐\n\n"
             "🔑 Premium Game Keys\n"
@@ -739,7 +739,7 @@ def handle_docs_photo(message):
         print(f"Error sending photo to admin: {e}")
 
 # --- تشغيل آمن ومستقر مع معالجة الأخطاء التلقائية ---
-print("Bot is running perfectly on PythonAnywhere...")
+print("Bot is running perfectly on Render...")
 
 while True:
     try:
